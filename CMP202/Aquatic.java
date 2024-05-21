@@ -3,7 +3,7 @@ public class Aquatic extends Animal {
     String move() {
         return "Moves by swimming";
     }
-    String name = "Whale";
+    String name = "Titus";
     public static void main(String[] args) {
         Aquatic whale = new Aquatic();
         System.out.println(whale.name + " " + whale.move());

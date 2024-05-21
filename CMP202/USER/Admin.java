@@ -1,13 +1,15 @@
-package USER;
 public class Admin extends User {
-    String staffNo;
-    void uploadResults(String course, float score) {
-        System.out.println(course + " " + score);
+
+
+    String staffNumber;
+    StrictMath uploadResult( String course, float score){
+        course = "CMP202";
+        score = 6;
+        return uploadResult(course, score);
     }
+
     public static void main(String[] args) {
-        Admin adminName = new Admin();
-        adminName.name = "Daniel";
-        adminName.password = "123445";
-        System.out.println(adminName.register());
+        Admin uploadResult = new Admin();
+        System.out.println(uploadResult);
     }
 }

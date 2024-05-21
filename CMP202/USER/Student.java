@@ -1,27 +1,31 @@
-package USER;
-public class Student extends User {
-    String matricNo = "bhu/22/04/05/0052";
-    String admissionNo = "123456789";
-    String registerCourse() {
-        if (matricNo.equals("") || admissionNo.equals("")) {
-            return "You cant register now ";
-        } else {
-            return "You have registered your courses";
-        }
+public class Student extends User{
+
+    String matricNo;
+    String AdmissionNo;
+
+    String RegisterCourse(){
+        return "CMP202";
     }
-    String checkResults() {
-        if (matricNo.equals("") || admissionNo.equals("")) {
-            return "Cannot check your result. Are you even a student?";
-        } else {
-            return "You score is 9 A and 1 B";
+    String CheckResult(){
+        matricNo = "BHU/22/04/05/0104";
+        AdmissionNo = "112242558";
+        if (matricNo.equals("BHU/22/04/05/0104")||AdmissionNo.equals("112242558")) {
+
+            return "Result";
         }
+
+        else{
+            return " FAILED!! Input matric number and admission number";
+        }
+
+
     }
     public static void main(String[] args) {
-        Student student = new Student();
-        student.name = "Isaac Adeyemi";
-        student.password = "12345678";
-        System.out.println(student.register());
-        System.out.println(student.registerCourse());
-        System.out.println(student.checkResults());
+        new Student();
+
+        System.out.println("RESULT");
+
+
+
     }
 }

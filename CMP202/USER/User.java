@@ -1,19 +1,20 @@
-package USER;
-
-public class User {
+public class User{
     String name;
     String password;
-    String login() {
+    String login(){
         return "Logged in";
+
+
     }
-    String logout() {
-        return "Logged out";
-    }
-    String register() {
-        if (name.equals("") || password.equals("")) {
-            return "Can't be empty";
-        } else {
-            return "Successfull";
+    String Register(){
+        if (name.equals("")|| password.equals("")) {
+            return "can't be empty";
+
+
         }
+        else{
+            return "Success";
+        }
+
     }
 }
